@@ -10,7 +10,7 @@ function get_pwd(){
   if [[ $git_root = / ]]; then
     unset git_root
     # no git prompt
-    prompt_short_dir=%~"%{$fg_bold[cyan]%} ❯%{$fg_bold[magenta]%}❯"
+    prompt_short_dir=%~"%{$fg_bold[cyan]%} ❯%{$fg_bold[magenta]%}❯%{$reset_color%}"
   else
     parent=${git_root%\/*}
     # prompt with git
